@@ -7,9 +7,10 @@ metadata:
 spec:
   ports:
   - port: 80
+    targetPort: 5000
     protocol: TCP
     name: flask
   selector:
     app: {{ .Values.appName }}
     tier: frontend
-  type: NodePort
+  type: LoadBalancer

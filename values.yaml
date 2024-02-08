@@ -9,4 +9,4 @@ configmap:
 
 image:
   name: 339712795235.dkr.ecr.us-east-1.amazonaws.com/webapp
-  tag: "10"
+  tag: "11"

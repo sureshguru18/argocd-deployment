@@ -15,7 +15,7 @@ node {
                         sh "git config user.email sureshguru.kumar04@gmail.com"
                         sh "git config user.name Sureshguru18"
                         sh "cat Chart.yaml"
-			sh "sed -i 's+appVersion: .*$+appVersion: "${DOCKERTAG}"+g' Chart.yaml
+			sh "sed -i 's+appVersion: .*\$+appVersion: \"${DOCKERTAG}\"+g' Chart.yaml"
 			//sh "sed -i 's+appVersion: .*\$+appVersion: \"\${DOCKERTAG}\"+g' Chart.yaml"
 			sh "cat Chart.yaml"
                         sh "git add ."
